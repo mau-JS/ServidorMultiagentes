@@ -30,7 +30,7 @@ class Boid():
         self.height = height
 
     def update(self,numeroStep,conteoAgente):
-        if conteoAgente <= 9:
+        if conteoAgente <= 19:
             vectorVelocidad = Vector(data[numeroStep][conteoAgente]['x'],data[numeroStep][conteoAgente]['y'])
             self.position += Vector(*vectorVelocidad)
             self.velocity += self.acceleration

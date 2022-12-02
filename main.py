@@ -65,9 +65,9 @@ def boidsInit():
     global flock
     if request.method == 'GET':
         # Set the number of agents here:
-        flock = [Boid(*posicionInicial[id], width, height, id) for id in range(10)]
+        flock = [Boid(*posicionInicial[id], width, height, id) for id in range(20)]
 
-        return jsonify({"num_agents":10, "w": 50, "h": 50})
+        return jsonify({"num_agents":20, "w": 50, "h": 50})
     elif request.method == 'POST':
         return "Post request from init\n"
 

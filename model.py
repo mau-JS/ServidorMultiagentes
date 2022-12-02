@@ -19,7 +19,7 @@ def compute_gini(model):
 
 
 #Cambiar esta linea
-for i in range (10):
+for i in range (20):
     #CarAgentType1
     eleccion = random.choice(choices)
 

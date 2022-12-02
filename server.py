@@ -21,7 +21,7 @@ chart = mesa.visualization.ChartModule([{"Label": "Tiempo total de coches en alt
                     data_collector_name='datacollector')
 
 server = mesa.visualization.ModularServer(
-    CarModel, [grid,chart], "Car Model", {"N": 10, "width": 50, "height": 50}
+    CarModel, [grid,chart], "Car Model", {"N": 20, "width": 50, "height": 50}
 )
 server.port = 8521 # The default
 server.launch()
